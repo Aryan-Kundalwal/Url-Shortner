@@ -15,6 +15,8 @@ async function handleUserSignup(req , res) {
 
 async function handleUserLogin(req , res) {
 
+    await connectTOMongoDB();
+
     const {email , password} = req.body;
     
     const user = await User.findOne({email ,password})

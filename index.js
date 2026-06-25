@@ -27,7 +27,7 @@ const startDB = async () => {
   }
 };
 
-startDB();
+
 
 
 
@@ -66,6 +66,12 @@ app.use('/' , staticRoute)
 res.redirect(entry.redirectURL);
  })
 
-export default app
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`Server Started at PORT ${PORT}`);
+  });
+}
+
+module.exports = app;
 
 
