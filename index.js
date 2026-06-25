@@ -9,10 +9,21 @@ const staticRoute = require('./routes/staticRouter')
 const userRoute = require('./routes/user');
 
 const app = express();
-const PORT = 8001 ;
+const PORT = process.env.PORT || 8001;
 
-connectTOMongoDB( "mongodb+srv://aryankundalwal2165_db_user:aryan12@cluster1.dzi4ufx.mongodb.net/?appName=Cluster1")
-.then(() => console.log("MongoDB Connected !"))
+
+const startDB = async () => {
+  if (isConnected) return;
+
+  await connectTOMongoDB(process.env.MONGO_URL);
+  isConnected = true;
+
+  console.log("MongoDB Connected !");
+};
+
+startDB();
+
+
 
 app.set("view engine" , "ejs")
 app.set("views" ,path.resolve('./views'))
@@ -45,5 +56,5 @@ app.use('/' , staticRoute)
    res.redirect(entry.redirectURL)
  })
 
-app.listen(PORT, () => console.log(`Server started at PORT : ${PORT}`));
+module.exports = app
 
