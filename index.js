@@ -12,13 +12,18 @@ const app = express();
 const PORT = process.env.PORT || 8001;
 
 
+let isConnected = false;
+
 const startDB = async () => {
   if (isConnected) return;
 
-  await connectTOMongoDB(process.env.MONGO_URL);
-  isConnected = true;
-
-  console.log("MongoDB Connected !");
+  try {
+    await connectTOMongoDB(process.env.MONGO_URL);
+    isConnected = true;
+    console.log("MongoDB Connected !");
+  } catch (err) {
+    console.log("DB Error:", err);
+  }
 };
 
 startDB();
@@ -53,7 +58,11 @@ app.use('/' , staticRoute)
         },
     }
    );
-   res.redirect(entry.redirectURL)
+   if (!entry) {
+  return res.status(404).send("URL not found");
+}
+
+res.redirect(entry.redirectURL);
  })
 
 module.exports = app
