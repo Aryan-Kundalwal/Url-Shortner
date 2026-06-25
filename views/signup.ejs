@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Signup</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-indigo-500 to-purple-600 min-h-screen flex items-center justify-center">
+
+  <div class="bg-white w-[380px] p-8 rounded-2xl shadow-2xl">
+    
+    <h1 class="text-2xl font-bold text-center text-gray-800 mb-6">Create Account</h1>
+
+    <form action="/user" method="POST" class="space-y-4">
+
+      <input type="text" name="name" placeholder="Full Name"
+        class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+
+      <input type="email" name="email" placeholder="Email"
+        class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+
+      <!-- Password Field -->
+      <div class="relative">
+        <input id="password" type="password" name="password" placeholder="Password"
+          class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+
+        <button type="button" onclick="togglePassword()"
+          class="absolute right-3 top-3 text-sm text-gray-600">
+          Show
+        </button>
+      </div>
+
+      <!-- Strength meter -->
+      <div class="h-2 bg-gray-200 rounded">
+        <div id="strengthBar" class="h-2 rounded bg-red-500 w-0 transition-all"></div>
+      </div>
+
+      <button class="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-3 rounded-lg font-semibold">
+        Sign Up
+      </button>
+    </form>
+
+    <!-- ✅ FIXED LOGIN LINK -->
+    <p class="text-center text-sm text-gray-500 mt-4">
+      Already have an account?
+      <a href="/login" class="text-indigo-600 font-semibold hover:underline">
+        Login
+      </a>
+    </p>
+  </div>
+
+  <script>
+    // Show / Hide password
+    function togglePassword() {
+      const pass = document.getElementById("password");
+      pass.type = pass.type === "password" ? "text" : "password";
+    }
+
+    // Password strength
+    const password = document.getElementById("password");
+    const bar = document.getElementById("strengthBar");
+
+    password.addEventListener("input", () => {
+      const val = password.value;
+      let strength = 0;
+
+      if (val.length > 5) strength++;
+      if (val.match(/[A-Z]/)) strength++;
+      if (val.match(/[0-9]/)) strength++;
+      if (val.match(/[^A-Za-z0-9]/)) strength++;
+
+      const width = (strength / 4) * 100;
+      bar.style.width = width + "%";
+
+      if (strength <= 1) bar.className = "h-2 rounded bg-red-500";
+      else if (strength === 2) bar.className = "h-2 rounded bg-yellow-500";
+      else bar.className = "h-2 rounded bg-green-500";
+    });
+  </script>
+
+</body>
+</html>
