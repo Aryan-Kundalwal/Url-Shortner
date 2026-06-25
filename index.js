@@ -66,7 +66,6 @@ app.use('/' , staticRoute)
 res.redirect(entry.redirectURL);
  })
 
-app.listen(PORT, () => {
-  console.log(`Server running on ${PORT}`);
-});
+export default app
+
 
