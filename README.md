@@ -102,11 +102,9 @@ Analytics:
 - GET /api/url/analytics/:shortId → Fetch click statistics
 
 ---
-
 ## 📁 PROJECT STRUCTURE
 
 URL-SHORTENER/
-
 ├── controllers/
 ├── middlewares/
 ├── models/
@@ -114,14 +112,13 @@ URL-SHORTENER/
 ├── services/
 ├── views/
 ├── uploads/
-
 ├── connect.js
 ├── index.js
-
 ├── package.json
 ├── vercel.json
 ├── .gitignore
 └── README.md
+
 ---
 
 📌 KEY ENGINEERING HIGHLIGHTS
