@@ -104,7 +104,6 @@ Analytics:
 ---
 
 📁 PROJECT STRUCTURE
-
 URL-SHORTENER/
 
 ├── controllers/
