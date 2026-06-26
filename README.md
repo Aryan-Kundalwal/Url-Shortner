@@ -99,20 +99,22 @@ The system integrates MongoDB for persistent storage, Node.js/Express for API ha
 - 
 ## 📁 Project Structure
 
+```text
 short-url/
-├── controller/ # Route controllers (business logic handlers)
-├── route/ # API & web routes
-├── middleware/ # Authentication / logging / request handling
-├── models/ # MongoDB schemas
-├── service/ # Core business logic (URL, QR, analytics)
-├── views/ # EJS templates (frontend rendering)
-├── connect.js # MongoDB connection setup
-├── index.js # App entry point
-├── vercel.json # Vercel deployment configuration
-├── package.json # Dependencies & scripts
-├── package-lock.json # Dependency lock file
-├── .gitignore # Ignored files
-└── README.md # Project documentation
+├── controller/        # Route controllers (business logic handlers)
+├── route/             # API & web routes
+├── middleware/        # Authentication / logging / request handling
+├── models/            # MongoDB schemas
+├── service/           # Core business logic (URL, QR, analytics)
+├── views/             # EJS templates (frontend rendering)
+├── connect.js         # MongoDB connection setup
+├── index.js           # App entry point
+├── vercel.json        # Vercel deployment configuration
+├── package.json       # Dependencies & scripts
+├── package-lock.json  # Dependency lock file
+├── .gitignore         # Ignored files
+└── README.md          # Project documentation
+```
 
 ## 💺 Seat Layout & Payment
 <p align="center">
