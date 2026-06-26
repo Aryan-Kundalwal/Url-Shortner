@@ -100,13 +100,13 @@ The system integrates MongoDB for persistent storage, Node.js/Express for API ha
 ## Clone Repository
 
 ```bash
-git clone https://github.com/Aryan-Kundalwal/movie-ticket-booking-app
+git clone https://github.com/Aryan-Kundalwal/Url-Shortner
 ```
 
 ## Navigate to Project Directory
 
 ```bash
-cd movie-ticket-booking-app
+cd Url-Shortner
 ```
 
 ## Install Dependencies
@@ -124,23 +124,29 @@ npm run dev
 ## 📁 Project Structure
 
 ```text
-QUICKSHOW/
+Short-Url/
 │
-├── client/
-├── server/
-├── screenshots/
+├── Controller/
+├── middleware/
+├── models/
+├── models/
+├── models/
+├── models/
+├── models/
+├── models/
 │
 └── README.md
 ```
 
+## Application Screenshots
 
-## 💺 Seat Layout & Payment
+### 💺 Seat Layout & Payment
 <p align="center">
   <img src="screenshots/seatlayout.png" width="45%">
   <img src="screenshots/paymentIntegration.png" width="45%">
 </p>
 
-## 🛠️ Admin Features
+### 🛠️ Admin Features
 <p align="center">
   <img src="screenshots/adminDashboard.png" width="45%">
   <img src="screenshots/addShows.png" width="45%">
@@ -151,7 +157,7 @@ QUICKSHOW/
   <img src="screenshots/listBookings.png" width="45%">
 </p>
 
-## 🎟️ User Booking History
+### 🎟️ User Booking History
 <p align="center">
   <img src="screenshots/myBooking.png" width="60%">
 </p>
