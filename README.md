@@ -106,7 +106,7 @@ git clone https://github.com/Aryan-Kundalwal/Url-Shortner
 ## Navigate to Project Directory
 
 ```bash
-cd Url-Shortner
+cd SHORT-URL
 ```
 
 ## Install Dependencies
@@ -129,24 +129,28 @@ Short-Url/
 ├── Controller/
 ├── middleware/
 ├── models/
-├── models/
-├── models/
-├── models/
-├── models/
-├── models/
+├── mservices/
+├── views/
+├── screenshots/
+├── .gitgnore
+├── connect.js
+├── index.js
+├── package-lock.json
+├── package.json
+├── vercel.json
 │
 └── README.md
 ```
 
 ## Application Screenshots
 
-### 💺 Seat Layout & Payment
+### 💺 Sign up & Login
 <p align="center">
   <img src="screenshots/seatlayout.png" width="45%">
   <img src="screenshots/paymentIntegration.png" width="45%">
 </p>
 
-### 🛠️ Admin Features
+### 🛠️ Home
 <p align="center">
   <img src="screenshots/adminDashboard.png" width="45%">
   <img src="screenshots/addShows.png" width="45%">
