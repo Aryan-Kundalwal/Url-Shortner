@@ -102,22 +102,22 @@ Analytics:
 - GET /api/url/analytics/:shortId → Fetch click statistics
 
 ---
-## 📁 PROJECT STRUCTURE
+## 📁 Project Structure
 
-URL-SHORTENER/
-├── controllers/
-├── middlewares/
-├── models/
-├── routes/
-├── services/
-├── views/
-├── uploads/
-├── connect.js
-├── index.js
-├── package.json
-├── vercel.json
-├── .gitignore
-└── README.md
+short-url/
+├── controller/ # Route controllers (business logic handlers)
+├── route/ # API & web routes
+├── middleware/ # Authentication / logging / request handling
+├── models/ # MongoDB schemas
+├── service/ # Core business logic (URL, QR, analytics)
+├── views/ # EJS templates (frontend rendering)
+├── connect.js # MongoDB connection setup
+├── index.js # App entry point
+├── vercel.json # Vercel deployment configuration
+├── package.json # Dependencies & scripts
+├── package-lock.json # Dependency lock file
+├── .gitignore # Ignored files
+└── README.md # Project documentation
 
 ---
 
