@@ -27,7 +27,7 @@ const startDB = async () => {
   }
 };
 
-
+startDB();
 
 
 
