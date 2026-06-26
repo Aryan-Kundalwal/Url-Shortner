@@ -1,9 +1,9 @@
 ## 🔗 URL SHORTENER + QR CODE GENERATOR
-Node.js · Express · MongoDB · React · Vercel
+![Node.js](https://img.shields.io/badge/Backend-Node.js-green)
+![MongoDB](https://img.shields.io/badge/Database-MongoDB-brightgreen)
 
 A scalable, full-stack URL shortening platform designed to deliver fast link generation, QR-based sharing, and real-time analytics. The system enables users to convert long URLs into compact, shareable links, track click activity, generate downloadable QR codes, and access links seamlessly across any device.
 
----
 
 ## 🚀 SYSTEM OVERVIEW
 
@@ -11,7 +11,6 @@ This application is engineered with a production-oriented architecture focusing 
 
 The system integrates MongoDB for persistent storage, Node.js/Express for API handling, and a React-based frontend deployed on Vercel for global accessibility.
 
----
 
 ## ✨ CORE CAPABILITIES
 
@@ -33,7 +32,6 @@ The system integrates MongoDB for persistent storage, Node.js/Express for API ha
 - QR-based sharing for mobile-first workflows
 - Direct link access without authentication barriers
 
----
 
 ### 🧠 ENGINEERING ARCHITECTURE
 
@@ -45,7 +43,6 @@ The system integrates MongoDB for persistent storage, Node.js/Express for API ha
 - Public tunneling via ngrok for backend exposure
 - Frontend hosted on Vercel for production deployment
 
----
 
 ## 🛠️ TECH STACK
 
@@ -90,7 +87,6 @@ The system integrates MongoDB for persistent storage, Node.js/Express for API ha
 7. Every access increments click counter
 8. User is redirected to original URL instantly
 
----
 
 ## 🔗 API ENDPOINTS
 
@@ -100,8 +96,7 @@ The system integrates MongoDB for persistent storage, Node.js/Express for API ha
 
 ### Analytics:
 - GET /api/url/analytics/:shortId → Fetch click statistics
-
----
+- 
 ## 📁 Project Structure
 
 short-url/
@@ -119,7 +114,28 @@ short-url/
 ├── .gitignore # Ignored files
 └── README.md # Project documentation
 
----
+## 💺 Seat Layout & Payment
+<p align="center">
+  <img src="screenshots/seatlayout.png" width="45%">
+  <img src="screenshots/paymentIntegration.png" width="45%">
+</p>
+
+## 🛠️ Admin Features
+<p align="center">
+  <img src="screenshots/adminDashboard.png" width="45%">
+  <img src="screenshots/addShows.png" width="45%">
+</p>
+
+<p align="center">
+  <img src="screenshots/listShows.png" width="45%">
+  <img src="screenshots/listBookings.png" width="45%">
+</p>
+
+## 🎟️ User Booking History
+<p align="center">
+  <img src="screenshots/myBooking.png" width="60%">
+</p>
+
 
 ## 📌 KEY ENGINEERING HIGHLIGHTS
 
@@ -129,7 +145,7 @@ short-url/
 - Integrated ngrok for production-like external API exposure
 - Ensured modular backend design for future scalability
 
----
+
 
 ## 🚀 FUTURE ENHANCEMENTS
 
@@ -140,9 +156,9 @@ short-url/
 - Rate limiting & abuse prevention system
 - Custom domain mapping support
 
----
 
-## 👨‍💻 AUTHOR
 
--GitHub: https://github.com/Aryan-Kundalwal
--LinkedIn: https://linkedin.com/in/your-profile
+## 👨‍💻 Author
+
+- GitHub: https://github.com/Aryan-Kundalwal  
+- LinkedIn: https://www.linkedin.com/in/aryankundalwal 
