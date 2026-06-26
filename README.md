@@ -96,25 +96,43 @@ The system integrates MongoDB for persistent storage, Node.js/Express for API ha
 
 ### Analytics:
 - GET /api/url/analytics/:shortId → Fetch click statistics
-- 
+
+## Clone Repository
+
+```bash
+git clone https://github.com/Aryan-Kundalwal/movie-ticket-booking-app
+```
+
+## Navigate to Project Directory
+
+```bash
+cd movie-ticket-booking-app
+```
+
+## Install Dependencies
+
+```bash
+npm install
+```
+
+## Start Development Server
+
+```bash
+npm run dev
+```
+
 ## 📁 Project Structure
 
 ```text
-short-url/
-├── controller/        # Route controllers (business logic handlers)
-├── route/             # API & web routes
-├── middleware/        # Authentication / logging / request handling
-├── models/            # MongoDB schemas
-├── service/           # Core business logic (URL, QR, analytics)
-├── views/             # EJS templates (frontend rendering)
-├── connect.js         # MongoDB connection setup
-├── index.js           # App entry point
-├── vercel.json        # Vercel deployment configuration
-├── package.json       # Dependencies & scripts
-├── package-lock.json  # Dependency lock file
-├── .gitignore         # Ignored files
-└── README.md          # Project documentation
+QUICKSHOW/
+│
+├── client/
+├── server/
+├── screenshots/
+│
+└── README.md
 ```
+
 
 ## 💺 Seat Layout & Payment
 <p align="center">
