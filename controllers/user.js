@@ -1,6 +1,6 @@
 const { v4: uuidv4 } = require("uuid");
 const User = require('../models/user')
-const { connectToMongoDB } = require("../connect");
+
 const {getUser ,setUser} = require('../service/auth')
 async function handleUserSignup(req , res) {
 
@@ -16,7 +16,7 @@ async function handleUserSignup(req , res) {
 
 async function handleUserLogin(req , res) {
 
-    await connectTOMongoDB();
+    
 
     const {email , password} = req.body;
     
