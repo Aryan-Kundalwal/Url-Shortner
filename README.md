@@ -1,11 +1,11 @@
-🔗 URL SHORTENER + QR CODE GENERATOR
+## 🔗 URL SHORTENER + QR CODE GENERATOR
 Node.js · Express · MongoDB · React · Vercel
 
 A scalable, full-stack URL shortening platform designed to deliver fast link generation, QR-based sharing, and real-time analytics. The system enables users to convert long URLs into compact, shareable links, track click activity, generate downloadable QR codes, and access links seamlessly across any device.
 
 ---
 
-🚀 SYSTEM OVERVIEW
+## 🚀 SYSTEM OVERVIEW
 
 This application is engineered with a production-oriented architecture focusing on performance, accessibility, and modular backend design. It supports real-world link distribution use cases including QR-based sharing, analytics tracking, and cross-device redirection using a secure backend exposed via tunneling.
 
@@ -107,15 +107,21 @@ Analytics:
 
 URL-SHORTENER/
 │
-├── controllers/      
-├── models/            
-├── routes/             
-├── middleware/         
-├── services/             
-├── public/             
-├── views/              
-├── index.js            
+├── controllers/        → Business logic (URL, analytics, image handling)
+├── middlewares/        → Auth, validation, upload security
+├── models/             → MongoDB schemas (URLs, clicks, uploaded images)
+├── routes/             → API endpoints
+├── services/           → Core services (QR generation, upload processing, URL logic)
+├── views/              → UI templates (if used)
+│
+├── uploads/            → Stored uploaded images (QRs / user images / assets)
+│
+├── connect.js          → MongoDB connection setup
+├── index.js            → Main server entry point
+│
 ├── package.json
+├── vercel.json
+├── .gitignore
 └── README.md
 ---
 
@@ -142,5 +148,5 @@ URL-SHORTENER/
 
 👨‍💻 AUTHOR
 
-GitHub: https://github.com/Aryan-Kundalwal
-LinkedIn: https://linkedin.com/in/your-profile
+-GitHub: https://github.com/Aryan-Kundalwal
+-LinkedIn: https://linkedin.com/in/your-profile
