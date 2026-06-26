@@ -107,22 +107,22 @@ Analytics:
 
 URL-SHORTENER/
 │
-├── controllers/        → Business logic (URL, analytics, image handling)
-├── middlewares/        → Auth, validation, upload security
-├── models/             → MongoDB schemas (URLs, clicks, uploaded images)
-├── routes/             → API endpoints
-├── services/           → Core services (QR generation, upload processing, URL logic)
-├── views/              → UI templates (if used)
+├── controllers/        → **Business logic (URL, analytics, image handling)**
+├── middlewares/        → **Auth, validation, upload security**
+├── models/             → **MongoDB schemas (URLs, clicks, uploaded images)**
+├── routes/             → **API endpoints**
+├── services/           → **Core services (QR generation, upload processing, URL logic)**
+├── views/              → **UI templates (if used)**
 │
-├── uploads/            → Stored uploaded images (QRs / user images / assets)
+├── uploads/            → **Stored uploaded images (QRs / user images / assets)**
 │
-├── connect.js          → MongoDB connection setup
-├── index.js            → Main server entry point
+├── connect.js          → **MongoDB connection setup**
+├── index.js            → **Main server entry point**
 │
-├── package.json
-├── vercel.json
-├── .gitignore
-└── README.md
+├── package.json        → **Project dependencies & scripts**
+├── vercel.json         → **Vercel deployment configuration**
+├── .gitignore          → **Ignored files (node_modules, env, etc.)**
+└── README.md           → **Project documentation**
 ---
 
 📌 KEY ENGINEERING HIGHLIGHTS
