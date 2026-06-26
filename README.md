@@ -146,25 +146,19 @@ Short-Url/
 
 ### 💺 Sign up & Login
 <p align="center">
-  <img src="screenshots/seatlayout.png" width="45%">
-  <img src="screenshots/paymentIntegration.png" width="45%">
+  <img src="screenshots/signup.png" width="45%">
+  <img src="screenshots/login.png" width="45%">
 </p>
 
 ### 🛠️ Home
 <p align="center">
-  <img src="screenshots/adminDashboard.png" width="45%">
-  <img src="screenshots/addShows.png" width="45%">
+  <img src="screenshots/home_1.png" width="45%">
+  <img src="screenshots/home_2.png" width="45%">
 </p>
 
-<p align="center">
-  <img src="screenshots/listShows.png" width="45%">
-  <img src="screenshots/listBookings.png" width="45%">
-</p>
 
-### 🎟️ User Booking History
-<p align="center">
-  <img src="screenshots/myBooking.png" width="60%">
-</p>
+
+
 
 
 ## 📌 KEY ENGINEERING HIGHLIGHTS
