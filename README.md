@@ -1,4 +1,4 @@
-## 🔗 URL SHORTENER + QR CODE GENERATOR
+## 🔗 URL SHORTENER
 ![Node.js](https://img.shields.io/badge/Backend-Node.js-green)
 ![MongoDB](https://img.shields.io/badge/Database-MongoDB-brightgreen)
 
