@@ -13,9 +13,9 @@ The system integrates MongoDB for persistent storage, Node.js/Express for API ha
 
 ---
 
-✨ CORE CAPABILITIES
+## ✨ CORE CAPABILITIES
 
-🔗 USER LAYER
+### 🔗 USER LAYER
 - Instant short URL generation from long URLs
 - Seamless redirection to original URLs
 - QR code generation for every shortened link
@@ -23,19 +23,19 @@ The system integrates MongoDB for persistent storage, Node.js/Express for API ha
 - Cross-device accessibility via public endpoint (ngrok)
 - Click tracking for every URL access
 
-📊 ANALYTICS LAYER
+### 📊 ANALYTICS LAYER
 - Real-time click count tracking per URL
 - Persistent storage of URL access metrics in MongoDB
 - Structured data model for URL + analytics mapping
 
-🌐 ACCESS & SHARING LAYER
+###  🌐 ACCESS & SHARING LAYER
 - Shareable short links accessible globally
 - QR-based sharing for mobile-first workflows
 - Direct link access without authentication barriers
 
 ---
 
-🧠 ENGINEERING ARCHITECTURE
+### 🧠 ENGINEERING ARCHITECTURE
 
 - Client–Server separation for modular scalability
 - RESTful API design for predictable communication
@@ -47,34 +47,34 @@ The system integrates MongoDB for persistent storage, Node.js/Express for API ha
 
 ---
 
-🛠️ TECH STACK
+## 🛠️ TECH STACK
 
-Frontend:
+### Frontend:
 - React.js
 - CSS3
 - Axios
 
-Backend:
+### Backend:
 - Node.js
 - Express.js
 
-Database:
+### Database:
 - MongoDB (Mongoose)
 
-Libraries & Tools:
+### Libraries & Tools:
 - shortid (unique URL generation)
 - qrcode (QR code generation)
 - ngrok (public backend exposure)
 - cookie-parser / JWT (if authentication used)
 
-Deployment:
+## Deployment:
 - Frontend → Vercel
 - Backend → Node.js + ngrok tunnel
 - Database → MongoDB Atlas / Local MongoDB
 
 ---
 
-⚙️ WORKFLOW
+## ⚙️ WORKFLOW
 
 1. User enters a long URL
 2. Backend generates a unique short ID
@@ -92,13 +92,13 @@ Deployment:
 
 ---
 
-🔗 API ENDPOINTS
+##🔗 API ENDPOINTS
 
-URL Management:
+### URL Management:
 - POST /api/url → Create short URL
 - GET /url/:shortId → Redirect to original URL
 
-Analytics:
+### Analytics:
 - GET /api/url/analytics/:shortId → Fetch click statistics
 
 ---
@@ -121,7 +121,7 @@ short-url/
 
 ---
 
-📌 KEY ENGINEERING HIGHLIGHTS
+## 📌 KEY ENGINEERING HIGHLIGHTS
 
 - Designed a high-performance URL redirection system with minimal latency
 - Implemented QR-based link distribution for mobile-first accessibility
@@ -131,7 +131,7 @@ short-url/
 
 ---
 
-🚀 FUTURE ENHANCEMENTS
+## 🚀 FUTURE ENHANCEMENTS
 
 - Custom branded URLs (vanity slugs)
 - Expiration-based short links
@@ -142,7 +142,7 @@ short-url/
 
 ---
 
-👨‍💻 AUTHOR
+## 👨‍💻 AUTHOR
 
 -GitHub: https://github.com/Aryan-Kundalwal
 -LinkedIn: https://linkedin.com/in/your-profile
