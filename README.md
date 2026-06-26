@@ -67,7 +67,7 @@ The system integrates MongoDB for persistent storage, Node.js/Express for API ha
 - ngrok (public backend exposure)
 - cookie-parser / JWT (if authentication used)
 
-## Deployment:
+### Deployment:
 - Frontend → Vercel
 - Backend → Node.js + ngrok tunnel
 - Database → MongoDB Atlas / Local MongoDB
@@ -92,7 +92,7 @@ The system integrates MongoDB for persistent storage, Node.js/Express for API ha
 
 ---
 
-##🔗 API ENDPOINTS
+## 🔗 API ENDPOINTS
 
 ### URL Management:
 - POST /api/url → Create short URL
